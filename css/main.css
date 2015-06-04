@@ -1,0 +1,11 @@
+html:-moz-full-screen{
+	background: white;
+}
+
+html:-webkit-full-screen{
+	background: white;
+}
+
+html:fullscreen{
+	background :white;
+}
