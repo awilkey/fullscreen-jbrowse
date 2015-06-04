@@ -6,6 +6,7 @@ If using with iframes, you will need to configure the iframe to allow fullscreen
 view.
 
 Should be compatible with:
+
 | Browser | Supported Version|
 |---------|------------------|
 | Chrome | 20+ |
@@ -14,7 +15,7 @@ Should be compatible with:
 |Safari | 5.1 + |
 |Opera | 21.10 + |
 
-Note that this plugin is provided as is, with no warranty.
+
 
 ## Known Issues
 By default, putting JBrowse into fullscreen will display a black background on
