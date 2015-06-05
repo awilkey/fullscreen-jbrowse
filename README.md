@@ -13,7 +13,7 @@ Should be compatible with:
 | Firefox | 10.0 + |
 | IE | 11 + |
 |Safari | 5.1 + |
-|Opera | 21.10 + |
+|Opera | 12.10 + |
 
 
 
