@@ -27,4 +27,5 @@ div.outerTrackContainer{
 
 to your main.css
 
-
+Development supported by the USDA-ARS, Corn Insects and Crop Genomics Research 
+Unit.
