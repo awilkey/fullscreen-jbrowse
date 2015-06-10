@@ -47,7 +47,7 @@ return declare( JBrowsePlugin,
     makeFullscreenButton: function () {
 	
 	var goFull = function(){
-		var ele = document.getElementById("genomebrowser");
+		var ele = document.getElementById("GenomeBrowser");
 		var doc = document;
 		// Recent api changes mean that browser might be looking for Fullscreen
 		// or FullScreen 
