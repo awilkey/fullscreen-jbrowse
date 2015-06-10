@@ -35,10 +35,12 @@ return declare( JBrowsePlugin,
 	
 			var myMenu = thisBrowser.menuBar;
 			
-        	console.log( "fullscreen plugin starting" );
+        		console.log( "fullscreen plugin starting" );
 
 			myMenu.appendChild(makeFull);
-		
+			// make certain outerTrackCoutainer actually has a color (white)
+			var ot = document.getElementsByClassName("outerTrackContainer");
+			ot[0].style.backgroundColor = 'white';
 		})
         
 		console.log( "fullscreen plugin added" );
