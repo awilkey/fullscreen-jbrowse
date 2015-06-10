@@ -1,16 +1,16 @@
 define([
            'dojo/_base/declare',
            'dojo/query',
-
-	   	   'dijit/form/Button',
+   	   'dijit/form/Button',
+	   'JBrowse/Util',
            'JBrowse/Plugin'
        ],
        function(
            declare,
            query,
-	   	   
-		   dijitButton,
-           JBrowsePlugin
+	   dijitButton,
+           Util, 
+	   JBrowsePlugin
        ) {
 return declare( JBrowsePlugin,
 {
@@ -40,7 +40,9 @@ return declare( JBrowsePlugin,
 			myMenu.appendChild(makeFull);
 			// make certain outerTrackCoutainer actually has a color (white)
 			var ot = document.getElementsByClassName("outerTrackContainer");
-			ot[0].style.backgroundColor = 'white';
+			ot[0].style.backgroundColor = 'rgba('+[255,255,255,1].join(',')+')';
+			var it = document.getElementsByClassName("innerTrackContainer");
+			it[0].style.backgroundColor = 'rgba('+[255,255,255,0].join(',')+')';
 		})
         
 		console.log( "fullscreen plugin added" );
@@ -102,6 +104,11 @@ return declare( JBrowsePlugin,
 		 		doc.webkitExitFullscreen();
 			}
 		 }
+		
+		// redraw location in case broweser doesn't update properly
+		var view = /.*&loc=([^:%]*)[:%3A]*([0-9]*)\.\.([0-9]*).*/.exec(window.location.href);
+		var loc = view[1]+":"+view[2]+".."+view[3];
+		window.JBrowse.navigateTo(loc);
 	};
 
 	var selectFullButton = new dijitButton({
