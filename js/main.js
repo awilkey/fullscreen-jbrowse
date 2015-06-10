@@ -108,7 +108,7 @@ return declare( JBrowsePlugin,
 		// redraw location in case broweser doesn't update properly
 		var view = /.*&loc=([^:%]*)[:%3A]*([0-9]*)\.\.([0-9]*).*/.exec(window.location.href);
 		var loc = view[1]+":"+view[2]+".."+view[3];
-		window.JBrowse.navigateTo(loc);
+		window.JBrowse.showRegionAfterSearch(loc);
 	};
 
 	var selectFullButton = new dijitButton({
