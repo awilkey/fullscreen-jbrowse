@@ -17,15 +17,6 @@ Should be compatible with:
 
 
 
-## Known Issues
-By default, putting JBrowse into fullscreen will display a black background on
-the track view. To fix this, it is suggested adding :
-
-div.outerTrackContainer{
-	background-color: rgba{255,255,255,1};
-}
-
-to your main.css
 
 Development supported by the USDA-ARS, Corn Insects and Crop Genomics Research 
 Unit.
